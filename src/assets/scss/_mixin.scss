@@ -1,0 +1,65 @@
+@mixin box_shadow_com {
+  box-shadow: 0 2px 10px 0 rgba(34, 41, 47, 0.2);
+}
+@mixin trans3 {
+  transition: 0.3s ease-in-out;
+}
+@mixin displayPosition($items, $content, $direction) {
+  display: flex;
+  align-items: $items;
+  justify-content: $content;
+  flex-direction: $direction;
+}
+
+@mixin for-size($size) {
+  @if $size == sm {
+    @media all and (max-width: 576px) { @content; }
+  } @else if $size == md {
+    @media all and (max-width: 768px) { @content; }
+  } @else if $size == lg {
+    @media all and (max-width: 992px) { @content; }
+  } @else if $size == xl {
+    @media all and (max-width: 1200px) { @content; }
+  } @else if $size == xxl {
+    @media all and (max-width: 1500px) { @content; }
+  }
+}
+@mixin animation($animate...) {
+  $max: length($animate);
+  $animations: '';
+  @for $i from 1 through $max {
+    $animations: #{$animations + nth($animate, $i)};
+    @if $i < $max {
+      $animations: #{$animations + ", "};
+    }
+  }
+  -webkit-animation: $animations;
+  -moz-animation: $animations;
+  -o-animation: $animations;
+  animation: $animations;
+}
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+@mixin keyframes($animationName) {
+  @-webkit-keyframes #{$animationName} {
+    @content;
+  }
+  @-moz-keyframes #{$animationName} {
+    @content;
+  }
+  @-o-keyframes #{$animationName} {
+    @content;
+  }
+  @keyframes #{$animationName} {
+    @content;
+  }
+}
+/////
+
