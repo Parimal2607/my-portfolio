@@ -1,3 +1,4 @@
+import axios from 'axios';
 import { useFormik } from 'formik';
 import React, { useEffect } from 'react'
 import { LoginSchema } from '../schemas';
@@ -14,13 +15,13 @@ function Contact() {
         initialValues: initialValues,
         validationSchema: LoginSchema,
         onSubmit: (values, action) => {
-            console.log(values)
-            // const tempObj = {
-            //     from: "parimalkumars@zignuts.com",
-            //     to: values?.email,
-            //     subject: values?.name,
-            //     text: values?.description
-            // }
+            // console.log(values)
+            const tempObj = {
+                from: "parimalkumars@zignuts.com",
+                to: values?.email,
+                subject: values?.name,
+                text: values?.description
+            }
 
             // let headers = new Headers();
 
@@ -39,6 +40,17 @@ function Contact() {
             // }).then(response => response.json())
             //     .then(json => console.log(json))
             //     .catch(error => console.log('Authorization failed: ' + error.message));
+
+            const response = axios({
+                method: 'post',
+                url: '/api/sendMail',
+                // responseType: 'json'
+                data:tempObj
+              })
+                .then(function (response) {
+                  console.log("response", response);
+                });
+        
             action.resetForm()
         }
 
@@ -61,7 +73,8 @@ function Contact() {
                         <h1>CONTACT ME</h1>
                     </div>
                     <div className="row">
-                        <h4 >I'd love to hear from you!</h4>
+                        {/* eslint-disable-next-line react/no-unescaped-entities*/}
+                        <h4 > I'd love to hear from you!</h4>
                     </div>
                     <form onSubmit={handleSubmit}>
                         <div className="row input-container">

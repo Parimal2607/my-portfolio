@@ -3,7 +3,6 @@ import React from 'react'
 
 
 function Nav() {
-  console.log('first')
   return (
     <div>
        <input className="menu-icon" type="checkbox" id="menu-icon" name="menu-icon" />

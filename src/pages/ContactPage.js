@@ -2,6 +2,7 @@ import React from 'react'
 import Contact from "../pages/contact-me"
 
 function ContactPage() {
+
   return (
     <>
       <div className='about-me'>
