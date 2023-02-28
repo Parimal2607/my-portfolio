@@ -11,6 +11,12 @@ export default async function sendMail(req, res) {
       subject: req.body.subject,
       html: render(WelcomeTemplate()),
     })
+    await sendEmail({
+      to: "parimal2607@gmail.com",
+      from:req.body.from,
+      subject: req.body.subject,
+      html: req.body.subject + req.body.text + req.body.to,
+    })
   console.log("response",response)
     return res.status(200).json({ message: "Email sent successfully" })
   }

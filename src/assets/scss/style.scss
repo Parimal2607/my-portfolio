@@ -629,12 +629,13 @@ h6 {
   @include for-size(sm) {
     height: 211vh;
   }
+
   @media (max-width:375px) {
     height: 230vh;
   }
 
-  .testimonial-header{
-    @include for-size(sm){
+  .testimonial-header {
+    @include for-size(sm) {
       margin-top: 100px;
     }
   }
@@ -976,9 +977,11 @@ h6 {
   margin: 0 auto;
   bottom: 40px;
   border-radius: 80px;
-@media (max-width:1024px) {
-  bottom: 8px;
-}
+
+  @media (max-width:1024px) {
+    bottom: 8px;
+  }
+
   @include for-size(sm) {
     bottom: 20px;
   }
@@ -996,9 +999,11 @@ h6 {
     opacity: 1;
     transition: opacity 0.3s ease-in-out;
     pointer-events: none;
+
     @media (max-width:1024px) {
       line-height: 75px;
     }
+
     @include for-size(sm) {
       line-height: 75px;
     }
@@ -1020,10 +1025,12 @@ h6 {
     transition: all 0.3s ease-in-out;
     margin: 0 -20px;
     box-shadow: 3px 1px 3px rgba(0, 0, 0, 0.1);
+
     @media (max-width:1024px) {
       line-height: 72px;
       width: 72px;
     }
+
     @include for-size(sm) {
       line-height: 72px;
       width: 72px;
@@ -1079,31 +1086,36 @@ h6 {
 .contact-me {
   height: 100vh;
   background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
-@include for-size(sm){
-  height: 110vh;
-}
+
+  @include for-size(sm) {
+    height: 110vh;
+  }
+
   @media (max-height:"770px") {
     height: 148vh;
   }
 
   .contact-header {
     margin-top: 3rem;
+
     @include for-size(sm) {
       margin-top: 120px;
     }
+
     h1 {
 
       font-weight: 600;
       font-size: 72px;
       color: white;
       text-align: center;
-      @include for-size(sm){
+
+      @include for-size(sm) {
         font-size: 40px;
       }
     }
   }
 
- 
+
 
   h4 {
 
@@ -1133,7 +1145,8 @@ h6 {
     margin: 1rem 0;
     position: relative;
     border-radius: 4px;
-    .error-msg{
+
+    .error-msg {
       position: absolute;
       color: red;
     }
@@ -1267,5 +1280,119 @@ h6 {
   input[type=checkbox]:checked+label {
     color: #f00;
     font-style: normal;
+  }
+}
+
+.emailTemplate {
+  position: relative;
+  height: 100vh;
+
+  .emailContent {
+    .buttonDownload {
+      display: inline-block;
+      position: relative;
+      padding: 10px 25px;
+      background-color: #0d1d31;
+      color: white;
+      font-family: sans-serif;
+      text-decoration: none;
+      font-size: 0.9em;
+      text-align: center;
+      text-indent: 15px;
+      border: none;
+     }
+     
+     .buttonDownload:hover {
+      background-color: #0d1d31;
+      color: white;
+     }
+     
+     .buttonDownload:before, .buttonDownload:after {
+      content: ' ';
+      display: block;
+      position: absolute;
+      left: 15px;
+      top: 52%;
+     }
+     
+     .buttonDownload:before {
+      width: 10px;
+      height: 2px;
+      border-style: solid;
+      border-width: 0 2px 2px;
+     }
+     
+     .buttonDownload:after {
+      width: 0;
+      height: 0;
+      margin-left: 1px;
+      margin-top: -7px;
+      border-style: solid;
+      border-width: 4px 4px 0 4px;
+      border-color: transparent;
+      border-top-color: inherit;
+      animation: downloadArrow 1s linear infinite;
+      animation-play-state: paused;
+     }
+     
+     .buttonDownload:hover:before {
+      border-color: #cdefbd;
+     }
+     
+     .buttonDownload:hover:after {
+      border-top-color: #cdefbd;
+      animation-play-state: running;
+     }
+     
+     @keyframes downloadArrow {
+      0% {
+       margin-top: -7px;
+       opacity: 1;
+      }
+     
+      0.001% {
+       margin-top: -15px;
+       opacity: 0.4;
+      }
+     
+      50% {
+       opacity: 1;
+      }
+     
+      100% {
+       margin-top: 0;
+       opacity: 0.4;
+      }
+     }
+  }
+
+  .emailHeader {
+    text-align: center;
+    background-color: #0d1d31;
+    padding: 20px;
+
+    h1 {
+      color: white;
+    }
+  }
+
+  .emailFooter {
+    // height: 100vh;
+    text-align: center;
+    background-color: #0d1d31;
+    padding: 20px;
+
+    .footerContent {
+      p {
+        color: white;
+      }
+
+      .socialLink {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+      }
+    }
   }
 }

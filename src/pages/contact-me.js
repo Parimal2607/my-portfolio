@@ -17,7 +17,7 @@ function Contact() {
         onSubmit: (values, action) => {
             // console.log(values)
             const tempObj = {
-                from: "parimalkumars@zignuts.com",
+                from: "parimal2607@gmail.com",
                 to: values?.email,
                 subject: values?.name,
                 text: values?.description

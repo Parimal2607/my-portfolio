@@ -1,15 +1,15 @@
 import nodemailer from "nodemailer";
 
-const MAIL_USER = "499322fe55dc57";
-const MAIL_PASS = "9d2dc6b6813adc";
+const MAIL_USER = "parimal2607@gmail.com";
+const MAIL_PASS = "nwzgaiiqiawkfikw";
 
-const SMTP_SERVICE = "smtp.mailtrap.io";
-const SMTP_PORT = "2525";
+const SMTP_SERVICE = "Gmail";
+// const SMTP_PORT = "465";
 const smtpOptions = {
   host: SMTP_SERVICE,
-  port: SMTP_PORT,
+  // port: SMTP_PORT,
   service: SMTP_SERVICE,
-  secure: false,
+  // secure: true,
   auth: {
     user: MAIL_USER,
     pass: MAIL_PASS,

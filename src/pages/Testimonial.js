@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import AnimatedBg from './AnimatedBg'
 import Image1 from "../assets/images/UiDev.jpg"
-import Image2 from "../assets/images/1673255222479.jpg"
+import Image2 from "../assets/images/ImgMe.jpg"
 import Image3 from "../assets/images/12.png"
 import Nav from './Nav'
 import Image from 'next/image'
