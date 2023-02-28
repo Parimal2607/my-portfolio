@@ -1,6 +1,4 @@
 import React from 'react'
-import FollowMe from './FollowMe'
-
 import MyInfo from './MyInfo'
 import Nav from './Nav'
 
@@ -26,7 +24,6 @@ function AboutMe() {
       <div className="align-items-center d-flex text animated-bg-color">
        <Nav/>
        <MyInfo/>
-       <FollowMe/>
       </div>
     </div>
   )

@@ -11,7 +11,7 @@ function Nav() {
         <ul className="pt-5">
           <li><Link href="/Navbar">Home</Link></li>
           <li><Link href="/about-me">About</Link></li>
-          <li><Link href="/Testimonial">Testimonial</Link></li>
+          <li><Link href="/TestimonialPage">Testimonial</Link></li>
           <li><Link href="/ContactPage">Contact</Link></li>
         </ul>
       </nav>

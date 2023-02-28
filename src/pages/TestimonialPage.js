@@ -19,7 +19,7 @@ function TestimonialPage() {
           </svg>
         </div>
       </div>
-      <div className="text animated-bg-color">
+      <div className="text">
        <Testimonial/>
       </div>
     </div>
