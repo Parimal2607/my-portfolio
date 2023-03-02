@@ -2,6 +2,7 @@
 import { render } from "@react-email/render"
 import WelcomeTemplate from "../../emails/template"
 import { sendEmail } from "../../lib/email"
+import SenderEmail from "@/emails/template2"
 
 export default async function sendMail(req, res) {
   if (req.method === "POST") {  
@@ -15,9 +16,13 @@ export default async function sendMail(req, res) {
       to: "parimal2607@gmail.com",
       from:req.body.from,
       subject: req.body.subject,
-      html: req.body.subject + req.body.text + req.body.to,
+      name:req.body.name,
+      text:req.body.text,
+      html: render(SenderEmail(req.body.from, req.body.subject, req.body.name, req.body.text)),
     })
   console.log("response",response)
     return res.status(200).json({ message: "Email sent successfully" })
   }
+
+  
 }
