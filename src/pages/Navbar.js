@@ -30,7 +30,7 @@ function Navbar() {
             <Nav />
 
             <div className="section-center content">
-              <h1 className="mb-0 ">Hello, I&apos;m Parimal Sharma.<br />I'm Frontend Developer.</h1>
+              <h1 className="mb-0 ">Hello, I&apos;m Parimal Sharma.<br />I&apos;m Frontend Developer.</h1>
             </div>
           </div>
         </div>
