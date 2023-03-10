@@ -11,7 +11,7 @@ export default function WelcomeEmail() {
           <div>
             <div style={emailTemplate}>
               <div style={emailHeader}>
-                <h1 style={emailTitle}>Hello I'm Parimal Sharma, I'm Frontend Developer</h1>
+                <h1 style={emailTitle}>Hello I&apos;m Parimal Sharma, I&apos;gm Frontend Developer</h1>
               </div>
               <div className="container my-4">
                 <div className="emailContent">
