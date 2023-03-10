@@ -7,12 +7,12 @@ function htmlemail() {
     <div>
       <div className='email-template'>
         <div className='email-header'>
-          <h1>Hello I'm Parimal Sharma Frontend Developer</h1>
+          <h1>Hello I&apos;m Parimal Sharma Frontend Developer</h1>
         </div>
         <div className='email-content container my-4'>
           <p>Front-end developers are the coders of all the user-facing elements of websites, web applications, and mobile applications. They interpret the needs of the company and its customers and create easy-to-use, interactive web apps. Front-end developers must be adept at both programming languages and design techniques.</p>
           <p>Here is my Portfolio link <a href='#'>portfolio link</a></p>
-          <p className='text-from-sender'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          <p className='text-from-sender'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
           <div className='resume'>
             <p>you can download My resume on button click</p>
             <button class="buttonDownload">hello</button>
