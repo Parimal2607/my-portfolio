@@ -33,7 +33,7 @@ function MyInfo() {
       <div className='container'>
         <div className='my-info'>
           <div className="card-container mx-auto  ">
-            <span className="pro" onClick={onButtonClick} role="button"><Image src={DownloadImage}/></span>
+            <span className="pro" onClick={onButtonClick} role="button"><Image src={DownloadImage} alt="download" /></span>
             <Image className="round" src={ProfileImage} alt="user" />
             <h3>Parimal Sharma</h3>
             <h6>India</h6>
