@@ -1,7 +1,16 @@
+import Head from 'next/head'
 import React from 'react'
 import Testimonial from "./Testimonial"
 function TestimonialPage() {
   return (
+    <>
+     <Head>
+        <title>Testimonial</title>
+        <meta
+          name="description"
+          content="Meta description for the About page"
+        />
+      </Head>
     <div className='about-me'>
      
       <div className="splash">
@@ -23,6 +32,7 @@ function TestimonialPage() {
        <Testimonial/>
       </div>
     </div>
+    </>
   )
 }
 
