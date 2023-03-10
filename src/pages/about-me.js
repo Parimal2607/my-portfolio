@@ -1,9 +1,18 @@
+import Head from 'next/head'
 import React from 'react'
 import MyInfo from './MyInfo'
 import Nav from './Nav'
 
 function AboutMe() {
   return (
+  <>
+  <Head>
+        <title>About Me</title>
+        <meta
+          name="description"
+          content="Meta description for the About page"
+        />
+      </Head>
     <div className='about-me'>
 
       <div className="splash">
@@ -26,6 +35,7 @@ function AboutMe() {
        <MyInfo/>
       </div>
     </div>
+  </>
   )
 }
 
