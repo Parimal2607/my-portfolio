@@ -10,7 +10,7 @@ export default function SenderEmail(from, subject, name, text) {
         <div>
             <div style={emailTemplate}>
               <div style={emailHeader}>
-                <h1 style={emailTitle}>It's a Requirement Alert</h1>
+                <h1 style={emailTitle}>It&apos;s a Requirement Alert</h1>
               </div>
               <div className="container my-4">
                 <div className="emailContent">
