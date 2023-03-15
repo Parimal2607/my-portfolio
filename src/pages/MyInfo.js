@@ -48,6 +48,7 @@ function MyInfo() {
                 <li>Bootstrap</li>
                 <li>JavaScript</li>
                 <li>React</li>
+                <li>material ui</li>
                 {/* <li>Node</li> */}
               </ul>
             </div>
