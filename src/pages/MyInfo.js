@@ -47,7 +47,8 @@ function MyInfo() {
                 <li>CSS</li>
                 <li>Bootstrap</li>
                 <li>JavaScript</li>
-                <li>React</li>
+                <li>React js</li>
+                <li>Next js</li> 
                 <li>material ui</li>
                 {/* <li>Node</li> */}
               </ul>
