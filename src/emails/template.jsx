@@ -1,4 +1,4 @@
-import { Html } from "@react-email/html"
+timport { Html } from "@react-email/html"
 import { Section } from "@react-email/section"
 import { Container } from "@react-email/container"
 import { Img } from '@react-email/img';
@@ -16,10 +16,10 @@ export default function WelcomeEmail() {
               <div className="container my-4">
                 <div className="emailContent">
                   <p style={emailDescription}>As a frontend developer, my expertise lies in creating and implementing visually appealing and user-friendly web applications. With a strong command of HTML, CSS, and JavaScript, I have the ability to design and develop responsive and dynamic web pages that deliver a seamless user experience across different devices and platforms.</p>
-                  <p style={emailDescription}>My experience in working with various web development frameworks such as React, Angular, and Vue.js enables me to build highly interactive and scalable applications that meet the business requirements of clients. I have also worked with backend developers to integrate APIs and build a robust and efficient system.</p>
+                  <p style={emailDescription}>My experience in working with various web development frameworks such as React, Next js enables me to build highly interactive and scalable applications that meet the business requirements of clients. I have also worked with backend developers to integrate APIs and build a robust and efficient system.</p>
                   <p style={emailDescription}>Additionally, I possess excellent problem-solving skills and the ability to debug and troubleshoot web application issues. My passion for keeping up with the latest web development trends and technologies helps me stay updated and deliver cutting-edge solutions.</p>
                   <p style={emailDescription}>Overall, I am a highly motivated and enthusiastic frontend developer with a strong portfolio of successful projects. I am committed to delivering high-quality solutions that exceed client expectations and drive business growth.</p>
-                  <p style={emailDescription}>Here is my Portfolio link <a href='#'>portfolio link</a></p>
+                  <p style={emailDescription}>Here is <a href='https://famous-rolypoly-ff1d8d.netlify.app/'>my Portfolio link</a></p>
                 </div>
               </div>
               <footer className='position-absolute bottom-0 w-100'>
