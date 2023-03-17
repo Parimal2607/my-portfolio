@@ -1,4 +1,4 @@
-timport { Html } from "@react-email/html"
+import { Html } from "@react-email/html"
 import { Section } from "@react-email/section"
 import { Container } from "@react-email/container"
 import { Img } from '@react-email/img';
